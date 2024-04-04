@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="文博学校官网，介绍文博学校的各种奇妙历险记"/>
+        <meta name="keywords" content="猎奇,文博,冒险,夸张,探索,开发"/>
+        <title>文博的奇妙冒险 信息展示</title>
+        <link rel="icon" href="picture/logo.png" type="image/png">
+        <style type="text/css">
+            button {
+                border-radius: 30px;
+                font-weight: bolder;
+                box-shadow: 0px 2px 6px #999999;
+            }
+            .navButton {
+                height: 40px;
+                width: 120px;
+                border: darkgray;
+                background-color: lightgray;
+                font-family: 宋体,楷体;
+                font-size: x-large;
+                color: black;
+                margin-left: 20px;
+            }
+            .nav {
+                position: fixed;
+                top: 20px;
+                float: left;
+                width: 99%;
+                height: 60px;
+                margin-left: 10px;
+            }
+            .navText {
+                font-size: x-large;
+                font-family: 宋体,楷体;
+                color: white;
+                margin-left: 10px;
+            }
+            .firstLine {
+                background-image: url(picture/灰.png);;
+                height: 65px;
+                width: 99%;
+                border-radius: 10px;
+            }
+            h1 {
+                font-family: 宋体,楷体;
+                color: white;
+            }
+            h2 {
+                font-family: 宋体,楷体;
+                color: white;
+            }
+            h3 {
+                font-family: 宋体,楷体;
+                color: white;
+            }
+            .paddingText 
+            {  
+                padding: 5px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: white;
+                border-style: double;
+            }
+            .Center
+            {
+                display: block;
+                margin: 0 auto;
+                border-radius: 10px;
+            }
+            .Color
+            {
+                color: gold;
+            }
+            .UI {
+                position: fixed;
+                right: 40px;
+                top: 100px;
+            }
+            .UI1 {
+                position: fixed;
+                right: 40px;
+                top: 200px;
+            }
+            .UI2 {
+                position: fixed;
+                right: 40px;
+                top: 300px;
+            }
+            .UI3 {
+                position: fixed;
+                right: 40px;
+                top: 400px;
+            }
+        </style>
+    </head>
+    <body style="background-image: url(picture/火星模糊.png);
+    background-size: 100%;
+    background-attachment: fixed;">
+    <div class="UI">
+        <img src="picture/黄.png" width="50" title="点击小黄人" onclick="woffY()">
+    </div>
+    <div class="UI1">
+        <img src="picture/赵.png" width="50" title="点击老六" onclick="woffZ()">
+    </div>
+    <div class="UI2">
+        <img src="picture/li.png" width="50" title="点击魔女" onclick="woffL()">
+    </div>
+    <div class="UI3">
+        <img src="picture/李头.png" width="50" title="点击泓姐" onclick="woffM()">
+    </div>
+    <div class="nav">
+        <img src="picture/logo.png" height="40px" title="文博" align="center">
+        <font class="navText">
+            文博的奇妙冒险 信息展示
+        </font>
+        <font class="navText">
+            &nbsp;|&nbsp;
+        </font>
+        <img src="picture/星际穿越.png" height="40px" title="网址导航" align="center" onclick="ClickPath()">
+        <button class="navButton" id="path" onclick="ClickPath()">
+            网址导航
+        </button>
+        <font class="navText">
+            &nbsp;|&nbsp;
+        </font>
+        <img src="picture/科幻建筑.png" height="40px" title="信息展示" align="center" onclick="ClickGate()">
+        <button class="navButton" onclick="ClickGate()">
+            信息展示
+        </button>
+        <font class="navText">
+            &nbsp;|&nbsp;
+        </font>
+        <img src="picture/科幻我的.png" height="40px" title="登陆界面" align="center" onclick="ClickLogin()">
+        <button class="navButton" onclick="ClickLogin()">
+            登陆界面
+        </button>
+    </div>
+    <div class="firstLine"></div>
+    <br>
+    <h1 align="center">
+        信 息 展 示
+    </h1>
+    <hr width="30%">
+    <h3 align="center">
+        I N F O R M A T I O N &nbsp; D I S P L A Y
+    </h3>
+    <div align="center" class="paddingText">
+        <h1 class="Color">
+            特 写 照 片
+        </h1>
+
+        <!-- 推荐内容 -->
+        <h2>
+            猎奇 冒险 夸张 探索 开发
+        </h2>
+        
+        <img class="Center" src="picture/1.jpg" width="70%" title="小孩护校">
+        <br><br>
+        <img class="Center" src="picture/2.jpg" width="70%" title="拆毁学校">
+        <br><br>
+        <img class="Center" src="picture/3.jpg" width="70%" title="冰雪奇缘">
+        <br><br>
+        <img class="Center" src="picture/4.jpg" width="70%" title="幼年教父">
+        <br><br>
+        <img class="Center" src="picture/5.jpg" width="70%" title="轻音小孩">
+        <br><br>
+        <img class="Center" src="picture/6.jpg" width="70%" title="师徒情深">
+        <br><br>
+        <img class="Center" src="picture/7.jpg" width="70%" title="魔女途径">
+        <br><br>
+    </div>
+    <script type="text/javascript">
+        let woY = new Audio('Music/黄.m4a')
+        let woZ = new Audio('Music/赵.m4a')
+        let woL = new Audio('Music/李.m4a')
+        let woM = new Audio('Music/M3.mp3')
+        function woffY()
+        {
+            woY.play()
+        }
+        function woffZ()
+        {
+            woZ.play()
+        }
+        function woffL()
+        {
+            woL.play()
+        }
+        function woffM()
+        {
+            woM.play()
+        }
+        function ClickPath()
+        {
+            window.open("../Wenbo.html",'_self')
+        }
+        function ClickGate()
+        {
+            window.open("Gate.html",'_self')
+        }
+        function ClickLogin()
+        {
+            window.open("BlasphemySlateLogin.html",'_self')
+        }
+        function ClickCator()
+        {
+            window.open("BlasphemySlatelCatorW.html",'_self')
+        }
+    </script>
+    </body>
+    <br>
+    <hr>
+    <footer align="center">
+        <font color="white">
+            Creator &COPY; \W/ - Chen - Kouge - Zhaoge - ZIMA PULSE
+        </font>
+    </footer>
+    <br>
+    <div align="center">
+        <button class="navButton" onclick="ClickCator()">
+            开发页面
+        </button><br><br>
+    </div>
+</html>

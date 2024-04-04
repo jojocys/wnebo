@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8"/>
+
+        <!-- 网址描述 -->
+        <meta name="description" content="介绍文博学校的各种奇妙历险记"/>
+        
+        <!-- 网址关键词 -->
+        <meta name="keywords" content="猎奇,文博,冒险,夸张,探索,开发"/>
+        
+        <!-- 网址名称 -->
+        <title>文博的奇妙冒险</title>
+        
+        <!-- 网址图标 -->
+        <link rel="icon" href="resource/picture/logo.png" type="image/png">
+        
+        <style type="text/css">
+            button {
+                border-radius: 30px;
+                font-weight: bolder;
+                box-shadow: 0px 2px 6px #999999;
+            }
+            .navButton {
+                height: 40px;
+                width: 120px;
+                border: darkgray;
+                background-color: lightgray;
+                font-family: 宋体,楷体;
+                font-size: x-large;
+                color: black;
+                margin-left: 20px;
+            }
+            .nav {
+                position: fixed;
+                top: 20px;
+                float: left;
+                width: 99%;
+                height: 60px;
+                margin-left: 10px;
+            }
+            .navText {
+                font-size: x-large;
+                font-family: 宋体,楷体;
+                color: white;
+                margin-left: 10px;
+            }
+            .firstLine {
+                background-image: url(resource/picture/灰.png);;
+                height: 65px;
+                width: 99%;
+                border-radius: 10px;
+            }
+            h1 {
+                font-family: 宋体,楷体;
+                color: white;
+            }
+            h2 {
+                font-family: 宋体,楷体;
+                color: white;
+            }
+            h3 {
+                font-family: 宋体,楷体;
+                color: white;
+            }
+            .paddingText 
+            {  
+                padding: 5px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: white;
+                border-style: double;
+            }
+            .Center
+            {
+                display: block;
+                margin: 0 auto;
+                border-radius: 10px; 
+                box-shadow: 0px 2px 6px #000000;
+            }
+            .Color
+            {
+                color: gold;
+            }
+            .UI {
+                position: fixed;
+                right: 40px;
+                top: 100px;
+            }
+            .UI1 {
+                position: fixed;
+                right: 40px;
+                top: 200px;
+            }
+            .UI2 {
+                position: fixed;
+                right: 40px;
+                top: 300px;
+            }
+            .UI3 {
+                position: fixed;
+                right: 40px;
+                top: 400px;
+            }
+            input {
+            width: 60%;
+            height: 40px;
+            vertical-align: middle;
+            border: black;
+            border-radius: 4px;
+            box-shadow: 0px 2px 6px #999999;
+           }
+        </style>
+    </head>
+
+    <!-- 网站背景 -->
+    <body style="background-image: url(resource/picture/地球模糊.png);
+    
+    background-size: 100%;
+    background-attachment: fixed;">
+    <div class="UI">
+        <img src="resource/picture/黄.png" width="50" title="点击小黄人" onclick="woffY()">
+    </div>
+    <div class="UI1">
+        <img src="resource/picture/赵.png" width="50" title="点击老六" onclick="woffZ()">
+    </div>
+    <div class="UI2">
+        <img src="resource/picture/li.png" width="50" title="点击魔女" onclick="woffL()">
+    </div>
+    <div class="UI3">
+        <img src="resource/picture/李头.png" width="50" title="点击泓姐" onclick="woffM()">
+    </div>
+    <div class="nav">
+        <img src="resource/picture/logo.png" height="40px" title="文博" align="center">
+        
+        <!-- 网站名称 -->
+        <font class="navText">
+            文博的奇妙冒险
+        </font>
+        
+        <font class="navText">
+            &nbsp;|&nbsp;
+        </font>
+        <img src="resource/picture/星际穿越.png" height="40px" title="网址导航" align="center" onclick="ClickPath()">
+        <button class="navButton" id="path" onclick="ClickPath()">
+            网址导航
+        </button>
+        <font class="navText">
+            &nbsp;|&nbsp;
+        </font>
+        <img src="resource/picture/科幻建筑.png" height="40px" title="信息展示" align="center" onclick="ClickGate()">
+        <button class="navButton" onclick="ClickGate()">
+            信息展示
+        </button>
+        <font class="navText">
+            &nbsp;|&nbsp;
+        </font>
+        <img src="resource/picture/科幻我的.png" height="40px" title="登陆界面" align="center" onclick="ClickLogin()">
+        <button class="navButton" onclick="ClickLogin()">
+            登陆界面
+        </button>
+    </div>
+    <div class="firstLine"></div>
+    <br>
+    <h1 align="center">
+        网 址 导 航
+    </h1>
+    <hr width="30%">
+    <h3 align="center">
+        U R L &nbsp; N A V I G A T I O N
+    </h3>
+    <div align="center">
+        <input type="text" id="keyWords" onblur="InD()" value=""  placeholder=" 请输入搜索内容:">
+    </div>
+    <br>
+    <div align="center">
+        <button class="navButton" onclick="Sear()">
+            搜 索
+        </button>
+    </div>
+    <br>
+    <div align="center" class="paddingText">
+        <h1 class="Color">
+            特 别 推 荐
+        </h1>
+
+        <!-- 推荐内容 -->
+        <h2>
+            猎奇 冒险 夸张 探索 开发
+        </h2>
+
+        <img class="Center" src="https://pic.616pic.com/ys_bnew_img/00/28/94/9hX9B1KBu7.jpg" height="300px" width="600px" title="特别推荐">
+        <br>
+        <button class="navButton" onclick="S1()">
+            SYOI
+        </button>
+        <button class="navButton" onclick="S2()">
+            Bilibili
+        </button>
+        <br><br>
+        <hr>
+
+        <h1 class="Color">
+            图 片 处 理
+        </h1>
+        <img class="Center" src="https://img.sydao.cn/uploads/20210703/93eadc91fb00f3373842d8301ddfc732.png" height="300px" width="600px" title="图片处理">
+        <br>
+        <button class="navButton" onclick="P1()">
+            搜图神器
+        </button>
+        <button class="navButton" onclick="P2()">
+            Fotor
+        </button>
+        <button class="navButton" onclick="P3()">
+            免抠图片
+        </button>
+        <button class="navButton" onclick="P4()">
+            创客贴
+        </button>
+        <button class="navButton" onclick="P5()">
+            改图鸭
+        </button>
+        <button class="navButton" onclick="P6()">
+            PhotoKit
+        </button>
+        <br><br>
+        <hr>
+
+        <h1 class="Color">
+            音 频 处 理
+        </h1>
+        <img class="Center" src="https://img2.baidu.com/it/u=2069730240,957980564&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=457" height="300px" width="600px" title="音频处理">
+        <br>
+        <button class="navButton" onclick="M1()">
+            马克配音
+        </button>
+        <button class="navButton" onclick="M2()">
+            AI音频
+        </button>
+        <button class="navButton" onclick="M3()">
+            Audiomass
+        </button>
+        <br><br>
+        <hr>
+
+        <h1 class="Color">
+            资 源 获 取
+        </h1>
+        <img class="Center" src="https://advcloudfiles.advantech.com.cn/cms/f69c471a-0eaf-4cfe-ace3-a5ec83a386c5/Content/content-image-1592361839629.jpg" height="300px" width="600px" title="资源获取">
+        <br>
+        <button class="navButton" onclick="R1()">
+            免费节点
+        </button>
+        <button class="navButton" onclick="R2()">
+            站长素材
+        </button>
+        <button class="navButton" onclick="R3()">
+            摄图网
+        </button>
+        <br><br>
+        <hr>
+
+        <h1 class="Color">
+            模 型 获 取
+        </h1>
+        <img class="Center" src="https://img.zcool.cn/community/01e6b85878ea0ea801219c77de5ef8.jpg@2o.jpg" height="300px" width="600px" title="模型获取">
+        <br>
+        <button class="navButton" onclick="B1()">
+            Unity
+        </button>
+        <button class="navButton" onclick="B2()">
+            布的
+        </button>
+        <button class="navButton" onclick="B3()">
+            Polyhaven
+        </button>
+        <button class="navButton" onclick="B4()">
+            爱给模型
+        </button>
+        <button class="navButton" onclick="B5()">
+            Blender
+        </button>
+        <br><br>
+        <hr>
+
+        <h1 class="Color">
+            音 乐 获 取
+        </h1>
+        <img class="Center" src="https://img1.baidu.com/it/u=1047562053,3747491658&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=313" height="300px" width="600px" title="音乐获取">
+        <br>
+        <button class="navButton" onclick="Music1()">
+            爱听音乐
+        </button>
+        <button class="navButton" onclick="Music2()">
+            牛五音乐
+        </button>
+        <button class="navButton" onclick="Music3()">
+            Hifini
+        </button>
+        <button class="navButton" onclick="Music4()">
+            网易云
+        </button>
+        <button class="navButton" onclick="Music4()">
+            QQ音乐
+        </button>
+        <br><br>
+        <hr>
+
+        <h1 class="Color">
+            文 件 转 换
+        </h1>
+        <img class="Center" src="https://img.zcool.cn/community/019f8a5fab6da411013fdcc750e5ff.png?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100" height="300px" width="600px" title="文件转换">
+        <br>
+        <button class="navButton" onclick="F1()">
+            123apps
+        </button>
+        <button class="navButton" onclick="F2()">
+            在线转换
+        </button>
+        <button class="navButton" onclick="F3()">
+            文件分享
+        </button>
+        <br><br>
+
+    </div>
+    <script type="text/javascript">
+        let woY = new Audio('resource/Music/黄.m4a')
+        let woZ = new Audio('resource/Music/赵.m4a')
+        let woL = new Audio('resource/Music/李.m4a')
+        let woM = new Audio('resource/Music/M3.mp3')
+        let inputKw
+        let history
+        let web = document.getElementById("ifram")
+        let webName = document.getElementById("urlName")
+        function InD()
+        {
+            inputKw = document.getElementById("keyWords").value
+        }
+        function Sear()
+        {
+            alert("即将跳转搜索:" + inputKw)
+            window.open('https://www.baidu.com/s?wd=' + inputKw)
+        }
+        function woffY()
+        {
+            woY.play()
+        }
+        function woffZ()
+        {
+            woZ.play()
+        }
+        function woffL()
+        {
+            woL.play()
+        }
+        function woffM()
+        {
+            woM.play()
+        }
+        function S1()
+        {
+            window.open("http://218.28.38.155:8081/cogs/index.php")
+        }
+        function S2()
+        {
+            window.open("https://www.bilibili.com")
+        }
+        function P1()
+        {
+            window.open("https://soutushenqi.com/home")
+        }
+        function P2()
+        {
+            window.open("https://www.fotor.com.cn")
+        }
+        function P3()
+        {
+            window.open("https://miankoutupian.com")
+        }
+        function P4()
+        {
+            window.open("https://www.chuangkit.com/designtools/self/design")
+        }
+        function P5()
+        {
+            window.open("https://www.gaituya.com/bianji")
+        }
+        function P6()
+        {
+            window.open("https://photokit.com/editor/?lang=zh")
+        }
+        function M1()
+        {
+            window.open("https://ttsmaker.cn")
+        }
+        function M2()
+        {
+            window.open("https://vocalremover.org/zh")
+        }
+        function M3()
+        {
+            window.open("https://audiomass.co")
+        }
+        function R1()
+        {
+            window.open("https://nodefree.org/f/freenode")
+        }
+        function R2()
+        {
+            window.open("https://sc.chinaz.com")
+        }
+        function R3()
+        {
+            window.open("https://699pic.com/media")
+        }
+        function B1()
+        {
+            window.open("https://assetstore.unity.com/3d")
+        }
+        function B2()
+        {
+            window.open("https://blenderco.cn/category/yuanma")
+        }
+        function B3()
+        {
+            window.open("https://polyhaven.com/zh")
+        }
+        function B4()
+        {
+            window.open("https://www.aigei.com/3d")
+        }
+        function B5()
+        {
+            window.open("https://blendswap.com/categories")
+        }
+        function Music1()
+        {
+            window.open("http://www.2t58.com")
+        }
+        function Music2()
+        {
+            window.open("http://www.6002255.com")
+        }
+        function Music3()
+        {
+            window.open("https://www.hifini.com")
+        }
+        function Music4()
+        {
+            window.open("https://music.163.com/#/my/m/music")
+        }
+        function Music5()
+        {
+            window.open("https://y.qq.com")
+        }
+        function F1()
+        {
+            window.open("https://123apps.com/cn")
+        }
+        function F2()
+        {
+            window.open("https://www.aconvert.com")
+        }
+        function F3()
+        {
+            window.open("https://share.lanol.cn")
+        }
+        function ClickPath()
+        {
+            window.open("Wenbo.html",'_self')
+        }
+        function ClickGate()
+        {
+            window.open("resource/Gate.html",'_self')
+        }
+        function ClickLogin()
+        {
+            window.open("resource/BlasphemySlateLogin.html",'_self')
+        }
+        function ClickCator()
+        {
+            window.open("resource/BlasphemySlatelCatorW.html",'_self')
+        }
+    </script>
+    </body>
+    <br>
+    <hr>
+    <footer align="center">
+        <font color="white">
+            Creator &COPY; \W/ - Chen - Kouge - Zhaoge - ZIMA PULSE
+        </font>
+    </footer>
+        <br>
+        <div align="center">
+            <button class="navButton" onclick="ClickCator()">
+                开发团队
+            </button>
+            <br><br>
+        </div>
+</html>

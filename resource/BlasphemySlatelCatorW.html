@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>文博的奇妙冒险 开发页面</title>
+        <link rel="icon" href="picture/logo.png" type="image/png">
+        <style type="text/css">
+           input {
+            width: 20%;
+            height: 20px;
+            vertical-align: middle;
+            border: lightgrey;
+            border-radius: 4px;
+            box-shadow: 0px 2px 6px #999999;
+           }
+           button {
+            height: 40px;
+            width: 120px;
+            vertical-align: middle;
+            border: lightgrey;
+            caret-color: lightgrey;
+            font-family: 宋体; 
+            font-weight: bolder;
+            border-radius: 4px;
+            box-shadow: 0px 2px 6px #999999;
+           }
+           .whiteSongText { 
+            font-family: 宋体; 
+            font-weight: bolder;
+            } 
+            .blackSongText {
+            color:black;   
+            font-family: 宋体; 
+            font-weight: bolder;
+            } 
+            .whiteRomanText {  
+                font-family:'Times New Roman', Times, serif; 
+                font-weight: bolder;
+            }
+            .paddingText {  
+                padding: 5px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: darkgrey;
+                border-style: double;
+            }
+            .UI {
+                position: fixed;
+                left: 20px;
+            }
+        </style>
+    </head>
+    <body style="background-image: url(picture/paper.png);
+    background-size: 100%;
+    background-attachment: fixed;">
+        <br>
+        <img class="UI" src="picture/REHOBOAM白透.png" width="100" title="\W/">
+        <div align="center">
+            <img src="picture/REHOBOAM白透.png" width="200" title="\W/">
+            <h1 class="whiteSongText">
+                \W/
+            </h1>
+            <hr width="30%">
+            <h3 class="whiteRomanText">
+                \W/ &nbsp; - &nbsp; Chen
+            </h3>
+        </div>
+        <div align="center" class="whiteSongText">
+            <h2>
+                开 发 页 面
+            </h2>
+        </div>
+        <br>
+        <div align="center">
+            <video autoplay muted height="300px" loop="true" id="spere">
+                <source src="picture/REHOBOAMSpere.mp4" type="video/mp4">
+            </video>
+        </div>
+        <pre class="whiteSongText" align="center">
+
+The Fool that doesn’t belong to this era;
+
+The Mysterious Ruler above the gray fog;
+
+The King of Yellow and Black who wields good luck.
+
+        </pre>
+        <br>
+        <div align="center">
+            <img src="picture/伏魔神龛终.png" width="90%" title="伏魔神龛">
+        </div>
+        <br>
+        <div align="center">
+            <img src="picture/伏魔神龛近终.png" width="90%" title="伏魔神龛">
+        </div>
+        <br>
+        <div align="center">
+            <button class="blackSongText" id="home" onclick="ClickHome()">
+                文博的奇妙冒险
+            </button>
+        </div>
+        <script type="text/javascript">
+            let spereVideo = document.getElementById("spere")
+            spereVideo.play()
+            function ClickHome()
+            {
+                location.replace("../Wenbo.html")
+            }
+        </script>
+    </body>
+    <br>
+    <pre class="whiteSongText" align="center">
+特 别 鸣 谢
+
+Kouge - 114514 Dollars
+
+Zhaoge - 15000 Dollars
+    </pre>
+    <br>
+    <hr>
+    <footer class="whiteSongText" align="center">
+        <font>
+            Creator &COPY; \W/ - Chen - Kouge - Zhaoge - ZIMA PULSE
+        </font>
+    </footer>
+</html>

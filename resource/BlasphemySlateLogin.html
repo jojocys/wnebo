@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>文博的奇妙冒险 登陆界面</title>
+        <link rel="icon" href="picture/logo.png" type="image/png">
+        <style type="text/css">
+           input {
+            width: 40%;
+            height: 40px;
+            vertical-align: middle;
+            border: black;
+            border-radius: 4px;
+            box-shadow: 0px 2px 6px #999999;
+           }
+           button {
+                height: 40px;
+                width: 120px;
+                border: darkgray;
+                background-color: lightgray;
+                font-family: 宋体,楷体;
+                font-size: x-large;
+                color: black;
+                margin-left: 20px;
+                border-radius: 30px;
+                font-weight: bolder;
+                box-shadow: 0px 2px 6px #999999;
+            }
+           .shadow {
+            box-shadow: 0px 2px 6px #999999;
+           }
+           .whiteSongText { 
+            font-family: 宋体,楷体; 
+            font-weight: bolder;
+            } 
+            .blackSongText {
+            color:black;   
+            font-family: 宋体,楷体; 
+            font-weight: bolder;
+            } 
+            .whiteRomanText { 
+                font-family:'Times New Roman', Times, serif; 
+                font-weight: bolder;
+            }
+            .paddingText {  
+                padding: 5px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: black;
+                border-style: double;
+            }
+            .UI {
+                position: fixed;
+                right: 40px;
+                top: 100px;
+            }
+            .UI1 {
+                position: fixed;
+                right: 40px;
+                top: 200px;
+            }
+            .UI2 {
+                position: fixed;
+                right: 40px;
+                top: 300px;
+            }
+            .UI3 {
+                position: fixed;
+                right: 40px;
+                top: 400px;
+            }
+        </style>
+        
+    </head>
+    
+    <body style="background-image: url(picture/paper.png);
+    background-size: 100%;
+    background-attachment: fixed;">
+    <div class="UI">
+        <img src="picture/黄.png" width="50" title="点击小黄人" onclick="woffY()">
+    </div>
+    <div class="UI1">
+        <img src="picture/赵.png" width="50" title="点击老六" onclick="woffZ()">
+    </div>
+    <div class="UI2">
+        <img src="picture/li.png" width="50" title="点击魔女" onclick="woffL()">
+    </div>
+    <div class="UI3">
+        <img src="picture/李头.png" width="50" title="点击泓姐" onclick="woffM()">
+    </div>
+    <br>
+        <div align="center">
+            <img align="center" src="picture/logo.png" width="200" title="文博">
+            <h1 class="whiteSongText">
+                文 博 的 奇 妙 冒 险
+            </h1>
+            <hr width="30%">
+            <h3 class="whiteRomanText">
+                L O G I N
+            </h3>
+            
+        </div>
+        <div align="center" class="whiteSongText">
+            <h2>
+                登 陆 界 面
+            </h2>
+        </div>
+        <div align="center" class="paddingText">
+            <h3 class="whiteSongText">
+                用 户 名
+            </h3>
+            <input type="text" id="userName" value="" placeholder="请输入用户名:">
+            <h1></h1>
+        </div>
+        <br>
+        <div align="center" class="paddingText">
+            <h3 class="whiteSongText">
+                用 户 密 码
+            </h3>
+            <input type="password" id="userPassword" value="" placeholder="请输入用户密码:">
+            <h1></h1>
+        </div>
+        <br>
+        <div align="center">
+            <button class="blackSongText" id="logn" onclick="ClickLogn()">
+                登 陆
+            </button>
+        </div>
+        <br>
+        <div align="center">
+            <button class="blackSongText" id="home" onclick="ClickHome()">
+                网址导航
+            </button>
+        </div>
+        <br>
+        <div align="center">
+            <button class="blackSongText" id="home" onclick="ClickCator()">
+                开发页面
+            </button>
+        </div>
+        <br>
+        <hr>
+        <footer align="center">
+            <font>
+                Creator &COPY; \W/ - Chen - Kouge - Zhaoge - ZIMA PULSE
+            </font>
+        </footer>
+        <script type="text/javascript">
+            let woY = new Audio('Music/黄.m4a')
+        let woZ = new Audio('Music/赵.m4a')
+        let woL = new Audio('Music/李.m4a')
+        let woM = new Audio('Music/M3.mp3')
+        function woffY()
+        {
+            woY.play()
+        }
+        function woffZ()
+        {
+            woZ.play()
+        }
+        function woffL()
+        {
+            woL.play()
+        }
+        function woffM()
+        {
+            woM.play()
+        }
+            function ClickLogn()
+            {
+                let userNameText = document.getElementById("userName").value
+                let userPasswordText = document.getElementById("userPassword").value
+                if(userNameText !== '')
+                {
+                    if(userPasswordText !== '')
+                    {
+                        alert(userNameText + " 登陆成功")
+                        window.open("../Wenbo.html",'_self')
+                    }
+                    else
+                    {
+                        alert("用户密码未填写")
+                    }
+                }
+                else
+                {
+                    alert("用户名未填写")
+                }
+            }
+            function ClickHome()
+            {
+                window.open("../Wenbo.html",'_self')
+            }
+            function ClickCator()
+            {
+                window.open("BlasphemySlatelCatorW.html",'_self')
+            }
+        </script>
+    </body>
+</html>
