@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="resource/picture/logo.png" type="image/png">
+        
+        <style type="text/css">
+            button {
+                height: 60px;
+    width: 180px;
+                border-radius: 30px;
+                font-weight: bolder;
+                box-shadow: 0px 2px 6px #999999;
+            }
+            input {
+            width: 60%;
+            height: 40px;
+            vertical-align: middle;
+            border: black;
+            border-radius: 4px;
+            box-shadow: 0px 2px 6px #999999;
+           }
+        </style>
+    </head>
+
+    <title>鼹鼠生日快乐</title>
+</head>
+<body>
+    <button id="playButton">播放音乐</button>
+<audio id="bgMusic" src="Music/happybirthday.mp3"></audio>
+    <script>
+        var playButton = document.getElementById('playButton');
+        var bgMusic = document.getElementById('bgMusic');
+      
+        playButton.addEventListener('click', function() {
+          if (bgMusic.paused) {
+            bgMusic.play();
+            playButton.textContent = '暂停音乐';
+          } else {
+            bgMusic.pause();
+            playButton.textContent = '播放音乐';
+          }
+        });
+      </script>
+    <h1 style="color: red;">祝鼹鼠生日快乐，学业有成，日语越来愈流利</h1>
+    <img src="picture/WechatIMG680.jpg" height="800px"width="800px">
+    <audio id="bgMusic" src="Music/happybirthday.mp3" loop></audio>
+  <script>
+    var bgMusic = document.getElementById('bgMusic');
+    bgMusic.play();
+  </script>
+</body>
+</html>
